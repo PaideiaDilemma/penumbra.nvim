@@ -35,9 +35,9 @@ function M.toggle()
     M.set_options('style', vim.g.penumbra_config.toggle_style_list[index])
     M.set_options('toggle_style_index', index)
     if vim.g.penumbra_config.style == 'light' then
-        vim.o.background = 'balanced_light'
+        vim.o.background = 'light'
     else
-        vim.o.background = 'balanced_dark'
+        vim.o.background = 'dark'
     end
     --vim.api.nvim_command('colorscheme penumbra')
     M.colorscheme()
