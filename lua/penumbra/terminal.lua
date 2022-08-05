@@ -13,7 +13,7 @@ function M.setup()
     vim.g.terminal_color_6 = c.cyan
     vim.g.terminal_color_7 = c.fg
     vim.g.terminal_color_8 = c.sky
-    vim.g.terminal_color_9 = c.magenta
+    vim.g.terminal_color_9 = c.purple
     vim.g.terminal_color_10 = c.green
     vim.g.terminal_color_11 = c.yellow
     vim.g.terminal_color_12 = c.blue

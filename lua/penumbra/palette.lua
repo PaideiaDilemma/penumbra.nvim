@@ -9,28 +9,19 @@ return {
     bg_p = "#3E4044",-- shade+
     bg = "#303338",-- shade
     bg_m = "#24272B",-- #shade-
-    -- This is the eight color scheme
-    red = "#CA736C",
+    -- This is the seven color scheme
+    red = "#CA7081",
     red_c = "#DF7F78", -- contrast red
-    orange = "#BA823A",
-    yellow = "#8D9741",
-    yellow_c = "#9CA748",-- contrast yellow
+    orange = "#C27D40",
+    yellow = "#92963A",
+    yellow_c = "#9CA748",-- contrast 8 yellow
     green = "#47A477",
-    cyan = "#00A2AF",
-    cyan_c = "#00B3C2",-- contrast cyan
-    blue = "#5794D0",
-    purple    = "#9481CC",
-    purple_c = "#A48FE1",-- contrast purple
-    magenta   = "#BC73A4",
-    -- This is for the 7 main colors in highlight.lua
+    cyan = "#00A0BA",
+    cyan_c = "#00B3C2",-- contrast 8 cyan
+    blue = "#6E8DD5",
+    purple = "#AC78BD"
+    purple_c = "#A48FE1",-- contrast 8 purple
     main_seven = {
-      red = "#CA7081",
-      orange = "#C27D40",
-      yellow = "#92963A",
-      green = "#3EA57B",
-      cyan = "#00A0BA",
-      blue = "#6E8DD5",
-      purple = "#AC78BD"
     }
   },
   contrast_dark = {
@@ -43,27 +34,17 @@ return {
     bg_p = "#3E4044",-- shade+
     bg = "#24272B",-- shade
     bg_m = "#181B1F",-- shade-
-    red = "#DF7F78",
+    red = "#DF7C8E",
     red_c = "#F58C81", -- more_contrast red
-    orange = "#CE9042",
-    yellow = "#9CA748",
+    orange = "#D68B47",
+    yellow = "#A1A641",
     yellow_c = "#A9B852",-- more_contrast yellow
-    green = "#50B584",
-    cyan = "#00B3C2",
+    green = "#44B689",
+    cyan = "#00B1CE",
     cyan_c = "#00C4D7",-- more_contrast cyan
-    blue = "#61A3E6",
-    purple = "#A48FE1",
+    blue = "#7A9BEC",
+    purple = "#BE85D1"
     purple_c = "#B69CF6",-- more_contrast purple
-    magenta = "#D080B6",
-    main_seven = {
-      red = "#DF7C8E",
-      orange = "#D68B47",
-      yellow = "#A1A641",
-      green = "#44B689",
-      cyan = "#00B1CE",
-      blue = "#7A9BEC",
-      purple = "#BE85D1"
-    }
   },
   more_contrast_dark = {
     fg_p = "#FFFDFB",-- sun+
@@ -75,27 +56,17 @@ return {
     bg_p = "#3E4044",-- shade+
     bg = "#181B1F",-- shade
     bg_m = "#0D0F13",-- shade-
-    red = "#F58C81",
-    red_c = "#CA736C",-- balanced red
-    orange = "#E09F47",
-    yellow = "#A9B852",
-    yellow_c = "#8D9741",-- balanced yellow
-    green = "#54C794",
-    cyan = "#00C4D7",
-    cyan_c = "#00A2AF",-- balanced cyan
-    blue = "#6EB2FD",
-    purple = "#B69CF6",
-    purple_c    = "#9481CC",-- balanced purple
-    magenta = "#E58CC5",
-    main_seven = {
-      red = "#F18AA1",
-      orange = "#EA9856",
-      yellow = "#B4B44A",
-      green = "#58C792",
-      cyan = "#16C3DD",
-      blue = "#83ADFF",
-      purple = "#CC94E6"
-    }
+    red = "#F18AA1",
+    red_c = "#CA736C",-- balanced 8 red
+    orange = "#EA9856",
+    yellow = "#B4B44A",
+    yellow_c = "#8D9741",-- balanced 8 yellow
+    green = "#58C792",
+    cyan = "#16C3DD",
+    cyan_c = "#00A2AF",-- balanced 8 cyan
+    blue = "#83ADFF",
+    purple = "#CC94E6"
+    purple_c    = "#9481CC",-- balanced 8 purple
   },
   balanced_light = {
     bg_p = "#FFFDFB",-- sun+
@@ -107,27 +78,17 @@ return {
     fg_p = "#3E4044",-- shade+
     fg = "#303338",-- shade
     fg_m = "#24272B",-- shade-
-    red = "#CA736C",
+    red = "#CA7081",
     red_c = "#DF7F78", -- contrast red
-    orange = "#BA823A",
-    yellow = "#8D9741",
-    yellow_c = "#9CA748",-- contrast yellow
+    orange = "#C27D40",
+    yellow = "#92963A",
+    yellow_c = "#9CA748",-- contrast 8 yellow
     green = "#47A477",
-    cyan = "#00A2AF",
-    cyan_c = "#00B3C2",-- contrast cyan
-    blue = "#5794D0",
-    purple    = "#9481CC",
-    purple_c = "#A48FE1",-- contrast purple
-    magenta   = "#BC73A4",
-    main_seven = {
-      red = "#CA7081",
-      orange = "#C27D40",
-      yellow = "#92963A",
-      green = "#3EA57B",
-      cyan = "#00A0BA",
-      blue = "#6E8DD5",
-      purple = "#AC78BD"
-    }
+    cyan = "#00A0BA",
+    cyan_c = "#00B3C2",-- contrast 8 cyan
+    blue = "#6E8DD5",
+    purple = "#AC78BD"
+    purple_c = "#A48FE1",-- contrast 8 purple
   },
   contrast_light = {
     bg_p = "#FFFDFB",-- sun+
@@ -139,27 +100,17 @@ return {
     fg_p = "#3E4044",-- shade+
     fg = "#24272B",-- shade
     fg_m = "#181B1F",-- shade-
-    red = "#DF7F78",
+    red = "#DF7C8E",
     red_c = "#F58C81", -- more_contrast red
-    orange = "#CE9042",
-    yellow = "#9CA748",
+    orange = "#D68B47",
+    yellow = "#A1A641",
     yellow_c = "#A9B852",-- more_contrast yellow
-    green = "#50B584",
-    cyan = "#00B3C2",
+    green = "#44B689",
+    cyan = "#00B1CE",
     cyan_c = "#00C4D7",-- more_contrast cyan
-    blue = "#61A3E6",
-    purple = "#A48FE1",
+    blue = "#7A9BEC",
+    purple = "#BE85D1"
     purple_c = "#B69CF6",-- more_contrast purple
-    magenta = "#D080B6",
-    main_seven = {
-      red = "#DF7C8E",
-      orange = "#D68B47",
-      yellow = "#A1A641",
-      green = "#44B689",
-      cyan = "#00B1CE",
-      blue = "#7A9BEC",
-      purple = "#BE85D1"
-    }
   },
   more_contrast_light = {
     bg_p = "#FFFDFB",-- sun+
@@ -171,26 +122,16 @@ return {
     fg_p = "#3E4044",-- shade+
     fg = "#181B1F",-- shade
     fg_m = "#0D0F13",-- shade-
-    red = "#F58C81",
-    red_c = "#CA736C",-- balanced red
-    orange = "#E09F47",
-    yellow = "#A9B852",
-    yellow_c = "#8D9741",-- balanced yellow
-    green = "#54C794",
-    cyan = "#00C4D7",
-    cyan_c = "#00A2AF",-- balanced cyan
-    blue = "#6EB2FD",
-    purple = "#B69CF6",
-    purple_c    = "#9481CC",-- balanced purple
-    magenta = "#E58CC5",
-    main_seven = {
-      red = "#F18AA1",
-      orange = "#EA9856",
-      yellow = "#B4B44A",
-      green = "#58C792",
-      cyan = "#16C3DD",
-      blue = "#83ADFF",
-      purple = "#CC94E6"
-    }
+    red = "#F18AA1",
+    red_c = "#CA736C",-- balanced 8 red
+    orange = "#EA9856",
+    yellow = "#B4B44A",
+    yellow_c = "#8D9741",-- balanced 8 yellow
+    green = "#58C792",
+    cyan = "#16C3DD",
+    cyan_c = "#00A2AF",-- balanced 8 cyan
+    blue = "#83ADFF",
+    purple = "#CC94E6"
+    purple_c = "#9481CC",-- balanced 8 purple
   }
 }

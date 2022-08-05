@@ -19,13 +19,13 @@ local colors = {
     Fg = {fg = c.fg},
     LightGrey = {fg = c.sky_p},
     Grey = {fg = c.sky_m},
-    Red = {fg = c.main_seven.red},
-    Cyan = {fg = c.main_seven.cyan},
-    Yellow = {fg = c.main_seven.yellow},
-    Orange = {fg = c.main_seven.orange},
-    Green = {fg = c.main_seven.green},
-    Blue = {fg = c.main_seven.blue},
-    Purple = {fg = c.main_seven.purple}
+    Red = {fg = c.red},
+    Cyan = {fg = c.cyan},
+    Yellow = {fg = c.yellow},
+    Orange = {fg = c.orange},
+    Green = {fg = c.green},
+    Blue = {fg = c.blue},
+    Purple = {fg = c.purple}
 }
 hl.common = {
     Normal = {fg = c.fg, bg = cfg.transparent and c.none or c.bg},
@@ -48,7 +48,7 @@ hl.common = {
     Conceal = {fg = c.sky_m, bg = c.bg_p},
     DiffAdd = {fg = c.none, bg = c.yellow},
     DiffChange = {fg = c.none, bg = c.orange},
-    DiffDelete = {fg = c.none, bg = c.magenta},
+    DiffDelete = {fg = c.none, bg = c.purple},
     DiffText = {fg = c.none, bg = c.fg_m},
     DiffAdded = colors.Green,
     DiffRemoved = colors.Red,
