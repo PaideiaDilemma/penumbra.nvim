@@ -16,9 +16,6 @@ end
 ---Apply the colorscheme (same as ':colorscheme penumbra')
 function M.colorscheme()
     vim.cmd("hi clear")
-    vim.schedule(function()
-      vim.notify("HEREEEE", vim.log.levels.WARN, {title = "penumbra.nvim"})
-    end)
     if vim.fn.exists("syntax_on") then vim.cmd("syntax reset") end
     vim.o.termguicolors = true
     vim.g.colors_name = "penumbra"
@@ -42,7 +39,8 @@ function M.toggle()
     else
         vim.o.background = 'balanced_dark'
     end
-    vim.api.nvim_command('colorscheme penumbra')
+    --vim.api.nvim_command('colorscheme penumbra')
+    M.colorscheme()
 end
 
 local default_config = {
