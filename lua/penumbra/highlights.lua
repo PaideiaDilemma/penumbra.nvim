@@ -25,7 +25,7 @@ local colors = {
     Orange = {fg = c.orange},
     Green = {fg = c.green},
     Blue = {fg = c.blue},
-    Purple = {fg = c.purple}
+    Purple = {fg = c.magenta}
 }
 hl.common = {
     Normal = {fg = c.fg, bg = cfg.transparent and c.none or c.bg},
