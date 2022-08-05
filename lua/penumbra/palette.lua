@@ -21,8 +21,6 @@ return {
     blue = "#6E8DD5",
     purple = "#AC78BD"
     purple_c = "#A48FE1",-- contrast 8 purple
-    main_seven = {
-    }
   },
   contrast_dark = {
     fg_p = "#FFFDFB",-- sun+
@@ -66,7 +64,7 @@ return {
     cyan_c = "#00A2AF",-- balanced 8 cyan
     blue = "#83ADFF",
     purple = "#CC94E6"
-    purple_c    = "#9481CC",-- balanced 8 purple
+    purple_c = "#9481CC",-- balanced 8 purple
   },
   balanced_light = {
     bg_p = "#FFFDFB",-- sun+
