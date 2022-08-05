@@ -76,7 +76,7 @@ local default_config = {
 ---Setup penumbra.nvim options, without applying colorscheme
 ---@param opts table: a table containing options
 function M.setup(opts)
-    if not vim.g.pwnumbra_config or not vim.g.penumbra_config.loaded then    -- if it's the first time setup() is called
+    if not vim.g.penumbra_config or not vim.g.penumbra_config.loaded then    -- if it's the first time setup() is called
         vim.g.penumbra_config = vim.tbl_deep_extend('keep', vim.g.penumbra_config or {}, default_config)
         local old_config = require('penumbra.old_config')
         if old_config then opts = old_config end
