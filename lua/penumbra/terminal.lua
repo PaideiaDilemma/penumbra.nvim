@@ -4,7 +4,7 @@ local c = require 'penumbra.colors'
 
 function M.setup()
     if not cfg.term_colors then return end
-    vim.g.terminal_color_0 = c.shade
+    vim.g.terminal_color_0 = c.bg
     vim.g.terminal_color_1 = c.red
     vim.g.terminal_color_2 = c.orange
     vim.g.terminal_color_3 = c.yellow

@@ -10,7 +10,7 @@ return {
     bg = "#303338",-- #shade
     bg_m = "#24272B",-- #shade-
     red = "#CA736C",
-    red_c = "#DF7F78" -- contrast red
+    red_c = "#DF7F78", -- contrast red
     orange = "#BA823A",
     yellow = "#8D9741",
     yellow_c = "#9CA748",-- contrast yellow
@@ -33,7 +33,7 @@ return {
     bg = "#24272B",-- #shade
     bg_m = "#181B1F",-- #shade-
     red = "#DF7F78",
-    red_c = "#F58C81" -- more_contrast red
+    red_c = "#F58C81", -- more_contrast red
     orange = "#CE9042",
     yellow = "#9CA748",
     yellow_c = "#A9B852",-- more_contrast yellow
@@ -79,7 +79,7 @@ return {
     fg = "#303338",-- #shade
     fg_m = "#24272B",-- #shade-
     red = "#CA736C",
-    red_c = "#DF7F78" -- contrast red
+    red_c = "#DF7F78", -- contrast red
     orange = "#BA823A",
     yellow = "#8D9741",
     yellow_c = "#9CA748",-- contrast yellow
@@ -91,7 +91,7 @@ return {
     purple_c = "#A48FE1",-- contrast purple
     magenta   = "#BC73A4"
   },
-  contrast_dark = {
+  contrast_light = {
     bg_p = "#FFFDFB",-- #sun+
     bg = "#FFF7ED",-- #sun
     bg_m = "#F2E6D4",-- #sun-
@@ -102,7 +102,7 @@ return {
     fg = "#24272B",-- #shade
     fg_m = "#181B1F",-- #shade-
     red = "#DF7F78",
-    red_c = "#F58C81" -- more_contrast red
+    red_c = "#F58C81", -- more_contrast red
     orange = "#CE9042",
     yellow = "#9CA748",
     yellow_c = "#A9B852",-- more_contrast yellow
@@ -114,7 +114,7 @@ return {
     purple_c = "#B69CF6",-- more_contrast purple
     magenta = "#D080B6"
   },
-  more_contrast_dark = {
+  more_contrast_light = {
     bg_p = "#FFFDFB",-- #sun+
     bg = "#FFF7ED",-- #sun
     bg_m = "#F2E6D4",-- #sun-
