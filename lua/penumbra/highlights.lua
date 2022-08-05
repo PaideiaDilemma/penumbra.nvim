@@ -19,13 +19,13 @@ local colors = {
     Fg = {fg = c.fg},
     LightGrey = {fg = c.sky_p},
     Grey = {fg = c.sky_m},
-    Red = {fg = c.red},
-    Cyan = {fg = c.cyan},
-    Yellow = {fg = c.yellow},
-    Orange = {fg = c.orange},
-    Green = {fg = c.green},
-    Blue = {fg = c.blue},
-    Purple = {fg = c.magenta}
+    Red = {fg = c.main_seven.red},
+    Cyan = {fg = c.main_seven.cyan},
+    Yellow = {fg = c.main_seven.yellow},
+    Orange = {fg = c.main_seven.orange},
+    Green = {fg = c.main_seven.green},
+    Blue = {fg = c.main_seven.blue},
+    Purple = {fg = c.main_seven.purple}
 }
 hl.common = {
     Normal = {fg = c.fg, bg = cfg.transparent and c.none or c.bg},

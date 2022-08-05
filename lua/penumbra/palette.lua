@@ -1,14 +1,15 @@
 return {
   balanced_dark = {
-    fg_p = "#FFFDFB",-- #sun+
-    fg = "#FFF7ED",-- #sun
-    fg_m = "#F2E6D4",-- #sun-
-    sky_p = "#BEBEBE",-- #sky+
-    sky = "#8F8F8F",-- #sky
-    sky_m = "#636363",-- #sky-
-    bg_p = "#3E4044",-- #shade+
-    bg = "#303338",-- #shade
+    fg_p = "#FFFDFB",-- sun+
+    fg = "#FFF7ED",-- sun
+    fg_m = "#F2E6D4",-- sun-
+    sky_p = "#BEBEBE",-- sky+
+    sky = "#8F8F8F",-- sky
+    sky_m = "#636363",-- sky-
+    bg_p = "#3E4044",-- shade+
+    bg = "#303338",-- shade
     bg_m = "#24272B",-- #shade-
+    -- This is the eight color scheme
     red = "#CA736C",
     red_c = "#DF7F78", -- contrast red
     orange = "#BA823A",
@@ -20,18 +21,28 @@ return {
     blue = "#5794D0",
     purple    = "#9481CC",
     purple_c = "#A48FE1",-- contrast purple
-    magenta   = "#BC73A4"
+    magenta   = "#BC73A4",
+    -- This is for the 7 main colors in highlight.lua
+    main_seven = {
+      red = "#CA7081",
+      orange = "#C27D40",
+      yellow = "#92963A",
+      green = "#3EA57B",
+      cyan = "#00A0BA",
+      blue = "#6E8DD5",
+      purple = "#AC78BD"
+    }
   },
   contrast_dark = {
-    fg_p = "#FFFDFB",-- #sun+
-    fg = "#FFF7ED",-- #sun
-    fg_m = "#F2E6D4",-- #sun-
-    sky_p = "#CECECE",-- #sky+
-    sky = "#9E9E9E",-- #sky
-    sky_m = "#636363",-- #sky-
-    bg_p = "#3E4044",-- #shade+
-    bg = "#24272B",-- #shade
-    bg_m = "#181B1F",-- #shade-
+    fg_p = "#FFFDFB",-- sun+
+    fg = "#FFF7ED",-- sun
+    fg_m = "#F2E6D4",-- sun-
+    sky_p = "#CECECE",-- sky+
+    sky = "#9E9E9E",-- sky
+    sky_m = "#636363",-- sky-
+    bg_p = "#3E4044",-- shade+
+    bg = "#24272B",-- shade
+    bg_m = "#181B1F",-- shade-
     red = "#DF7F78",
     red_c = "#F58C81", -- more_contrast red
     orange = "#CE9042",
@@ -43,18 +54,27 @@ return {
     blue = "#61A3E6",
     purple = "#A48FE1",
     purple_c = "#B69CF6",-- more_contrast purple
-    magenta = "#D080B6"
+    magenta = "#D080B6",
+    main_seven = {
+      red = "#DF7C8E",
+      orange = "#D68B47",
+      yellow = "#A1A641",
+      green = "#44B689",
+      cyan = "#00B1CE",
+      blue = "#7A9BEC",
+      purple = "#BE85D1"
+    }
   },
   more_contrast_dark = {
-    fg_p = "#FFFDFB",-- #sun+
-    fg = "#FFF7ED",-- #sun
-    fg_m = "#F2E6D4",-- #sun-
-    sky_p = "#DEDEDE",-- #sky+
-    sky = "#AEAEAE",-- #sky
-    sky_m = "#636363",-- #sky-
-    bg_p = "#3E4044",-- #shade+
-    bg = "#181B1F",-- #shade
-    bg_m = "#0D0F13",-- #shade-
+    fg_p = "#FFFDFB",-- sun+
+    fg = "#FFF7ED",-- sun
+    fg_m = "#F2E6D4",-- sun-
+    sky_p = "#DEDEDE",-- sky+
+    sky = "#AEAEAE",-- sky
+    sky_m = "#636363",-- sky-
+    bg_p = "#3E4044",-- shade+
+    bg = "#181B1F",-- shade
+    bg_m = "#0D0F13",-- shade-
     red = "#F58C81",
     red_c = "#CA736C",-- balanced red
     orange = "#E09F47",
@@ -66,18 +86,27 @@ return {
     blue = "#6EB2FD",
     purple = "#B69CF6",
     purple_c    = "#9481CC",-- balanced purple
-    magenta = "#E58CC5"
+    magenta = "#E58CC5",
+    main_seven = {
+      red = "#F18AA1",
+      orange = "#EA9856",
+      yellow = "#B4B44A",
+      green = "#58C792",
+      cyan = "#16C3DD",
+      blue = "#83ADFF",
+      purple = "#CC94E6"
+    }
   },
   balanced_light = {
-    bg_p = "#FFFDFB",-- #sun+
-    bg = "#FFF7ED",-- #sun
-    bg_m = "#F2E6D4",-- #sun-
-    sky_p = "#BEBEBE",-- #sky+
-    sky = "#8F8F8F",-- #sky
-    sky_m = "#636363",-- #sky-
-    fg_p = "#3E4044",-- #shade+
-    fg = "#303338",-- #shade
-    fg_m = "#24272B",-- #shade-
+    bg_p = "#FFFDFB",-- sun+
+    bg = "#FFF7ED",-- sun
+    bg_m = "#F2E6D4",-- sun-
+    sky_p = "#BEBEBE",-- sky+
+    sky = "#8F8F8F",-- sky
+    sky_m = "#636363",-- sky-
+    fg_p = "#3E4044",-- shade+
+    fg = "#303338",-- shade
+    fg_m = "#24272B",-- shade-
     red = "#CA736C",
     red_c = "#DF7F78", -- contrast red
     orange = "#BA823A",
@@ -89,18 +118,27 @@ return {
     blue = "#5794D0",
     purple    = "#9481CC",
     purple_c = "#A48FE1",-- contrast purple
-    magenta   = "#BC73A4"
+    magenta   = "#BC73A4",
+    main_seven = {
+      red = "#CA7081",
+      orange = "#C27D40",
+      yellow = "#92963A",
+      green = "#3EA57B",
+      cyan = "#00A0BA",
+      blue = "#6E8DD5",
+      purple = "#AC78BD"
+    }
   },
   contrast_light = {
-    bg_p = "#FFFDFB",-- #sun+
-    bg = "#FFF7ED",-- #sun
-    bg_m = "#F2E6D4",-- #sun-
-    sky_p = "#CECECE",-- #sky+
-    sky = "#9E9E9E",-- #sky
-    sky_m = "#636363",-- #sky-
-    fg_p = "#3E4044",-- #shade+
-    fg = "#24272B",-- #shade
-    fg_m = "#181B1F",-- #shade-
+    bg_p = "#FFFDFB",-- sun+
+    bg = "#FFF7ED",-- sun
+    bg_m = "#F2E6D4",-- sun-
+    sky_p = "#CECECE",-- sky+
+    sky = "#9E9E9E",-- sky
+    sky_m = "#636363",-- sky-
+    fg_p = "#3E4044",-- shade+
+    fg = "#24272B",-- shade
+    fg_m = "#181B1F",-- shade-
     red = "#DF7F78",
     red_c = "#F58C81", -- more_contrast red
     orange = "#CE9042",
@@ -112,18 +150,27 @@ return {
     blue = "#61A3E6",
     purple = "#A48FE1",
     purple_c = "#B69CF6",-- more_contrast purple
-    magenta = "#D080B6"
+    magenta = "#D080B6",
+    main_seven = {
+      red = "#DF7C8E",
+      orange = "#D68B47",
+      yellow = "#A1A641",
+      green = "#44B689",
+      cyan = "#00B1CE",
+      blue = "#7A9BEC",
+      purple = "#BE85D1"
+    }
   },
   more_contrast_light = {
-    bg_p = "#FFFDFB",-- #sun+
-    bg = "#FFF7ED",-- #sun
-    bg_m = "#F2E6D4",-- #sun-
-    sky_p = "#DEDEDE",-- #sky+
-    sky = "#AEAEAE",-- #sky
-    sky_m = "#636363",-- #sky-
-    fg_p = "#3E4044",-- #shade+
-    fg = "#181B1F",-- #shade
-    fg_m = "#0D0F13",-- #shade-
+    bg_p = "#FFFDFB",-- sun+
+    bg = "#FFF7ED",-- sun
+    bg_m = "#F2E6D4",-- sun-
+    sky_p = "#DEDEDE",-- sky+
+    sky = "#AEAEAE",-- sky
+    sky_m = "#636363",-- sky-
+    fg_p = "#3E4044",-- shade+
+    fg = "#181B1F",-- shade
+    fg_m = "#0D0F13",-- shade-
     red = "#F58C81",
     red_c = "#CA736C",-- balanced red
     orange = "#E09F47",
@@ -135,6 +182,15 @@ return {
     blue = "#6EB2FD",
     purple = "#B69CF6",
     purple_c    = "#9481CC",-- balanced purple
-    magenta = "#E58CC5"
-  },
+    magenta = "#E58CC5",
+    main_seven = {
+      red = "#F18AA1",
+      orange = "#EA9856",
+      yellow = "#B4B44A",
+      green = "#58C792",
+      cyan = "#16C3DD",
+      blue = "#83ADFF",
+      purple = "#CC94E6"
+    }
+  }
 }
