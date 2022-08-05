@@ -1,6 +1,6 @@
-local c = require('onedark.colors')
-local cfg = vim.g.onedark_config
-local util = require("onedark.util")
+local c = require('penumbra.colors')
+local cfg = vim.g.penumbra_config
+local util = require("penumbra.util")
 
 local M = {}
 local hl = {langs = {}, plugins = {}}
@@ -17,8 +17,8 @@ end
 
 local colors = {
     Fg = {fg = c.fg},
-    LightGrey = {fg = c.light_grey},
-    Grey = {fg = c.grey},
+    LightGrey = {fg = c.sky_p},
+    Grey = {fg = c.sky_m},
     Red = {fg = c.red},
     Cyan = {fg = c.cyan},
     Yellow = {fg = c.yellow},
@@ -28,28 +28,28 @@ local colors = {
     Purple = {fg = c.purple}
 }
 hl.common = {
-    Normal = {fg = c.fg, bg = cfg.transparent and c.none or c.bg0},
-    Terminal = {fg = c.fg, bg = cfg.transparent and c.none or c.bg0},
-    EndOfBuffer = {fg = cfg.ending_tildes and c.bg2 or c.bg0, bg = cfg.transparent and c.none or c.bg0},
-    FoldColumn = {fg = c.fg, bg = cfg.transparent and c.none or c.bg1},
-    Folded = {fg = c.fg, bg = cfg.transparent and c.none or c.bg1},
-    SignColumn = {fg = c.fg, bg = cfg.transparent and c.none or c.bg0},
+    Normal = {fg = c.fg, bg = cfg.transparent and c.none or c.bg},
+    Terminal = {fg = c.fg, bg = cfg.transparent and c.none or c.bg},
+    EndOfBuffer = {fg = cfg.ending_tildes and c.bg_m or c.bg, bg = cfg.transparent and c.none or c.bg},
+    FoldColumn = {fg = c.fg, bg = cfg.transparent and c.none or c.bg_p},
+    Folded = {fg = c.fg, bg = cfg.transparent and c.none or c.bg_p},
+    SignColumn = {fg = c.fg, bg = cfg.transparent and c.none or c.bg},
     ToolbarLine = {fg = c.fg},
     Cursor = {fmt = "reverse"},
     vCursor = {fmt = "reverse"},
     iCursor = {fmt = "reverse"},
     lCursor = {fmt = "reverse"},
     CursorIM = {fmt = "reverse"},
-    CursorColumn = {bg = c.bg1},
-    CursorLine = {bg = c.bg1},
-    ColorColumn = {bg = c.bg1},
+    CursorColumn = {bg = c.bg_p},
+    CursorLine = {bg = c.bg_p},
+    ColorColumn = {bg = c.bg_p},
     CursorLineNr = {fg = c.fg},
-    LineNr = {fg = c.grey},
-    Conceal = {fg = c.grey, bg = c.bg1},
-    DiffAdd = {fg = c.none, bg = c.diff_add},
-    DiffChange = {fg = c.none, bg = c.diff_change},
-    DiffDelete = {fg = c.none, bg = c.diff_delete},
-    DiffText = {fg = c.none, bg= c.diff_text},
+    LineNr = {fg = c.sky_m},
+    Conceal = {fg = c.sky_m, bg = c.bg_p},
+    DiffAdd = {fg = c.none, bg = c.yellow},
+    DiffChange = {fg = c.none, bg = c.orange},
+    DiffDelete = {fg = c.none, bg = c.magenta},
+    DiffText = {fg = c.none, bg = c.fg_m},
     DiffAdded = colors.Green,
     DiffRemoved = colors.Red,
     DiffFile = colors.Cyan,
@@ -58,40 +58,40 @@ hl.common = {
     ErrorMsg = {fg = c.red, fmt = "bold"},
     WarningMsg = {fg = c.yellow, fmt = "bold"},
     MoreMsg = {fg = c.blue, fmt = "bold"},
-    IncSearch = {fg = c.bg0, bg = c.orange},
-    Search = {fg = c.bg0, bg = c.bg_yellow},
-    Substitute = {fg = c.bg0, bg = c.green},
-    MatchParen = {fg = c.none, bg = c.grey},
-    NonText = {fg = c.grey},
-    Whitespace = {fg = c.grey},
-    SpecialKey = {fg = c.grey},
-    Pmenu = {fg = c.fg, bg = c.bg1},
-    PmenuSbar = {fg = c.none, bg = c.bg1},
-    PmenuSel = {fg = c.bg0, bg = c.bg_blue},
-    WildMenu = {fg = c.bg0, bg = c.blue},
-    PmenuThumb = {fg = c.none, bg = c.grey},
+    IncSearch = {fg = c.bg, bg = c.orange},
+    Search = {fg = c.bg, bg = c.yellow},
+    Substitute = {fg = c.bg, bg = c.green},
+    MatchParen = {fg = c.none, bg = c.sky_m},
+    NonText = {fg = c.sky_m},
+    Whitespace = {fg = c.sky_m},
+    SpecialKey = {fg = c.sky_m},
+    Pmenu = {fg = c.fg, bg = c.bg_p},
+    PmenuSbar = {fg = c.none, bg = c.bg_p},
+    PmenuSel = {fg = c.bg, bg = c.blue},
+    WildMenu = {fg = c.bg, bg = c.blue},
+    PmenuThumb = {fg = c.none, bg = c.sky_m},
     Question = {fg = c.yellow},
     SpellBad = {fg = c.red, fmt = "underline", sp = c.red},
     SpellCap = {fg = c.yellow, fmt = "underline", sp = c.yellow},
     SpellLocal = {fg = c.blue, fmt = "underline", sp = c.blue},
     SpellRare = {fg = c.purple, fmt = "underline", sp = c.purple},
-    StatusLine = {fg = c.fg, bg = c.bg2},
-    StatusLineTerm = {fg = c.fg, bg = c.bg2},
-    StatusLineNC = {fg = c.grey, bg = c.bg1},
-    StatusLineTermNC = {fg = c.grey, bg = c.bg1},
-    TabLine = {fg = c.fg, bg = c.bg1},
-    TabLineFill = {fg = c.grey, bg = c.bg1},
-    TabLineSel =  {fg = c.bg0, bg = c.fg},
+    StatusLine = {fg = c.fg, bg = c.bg_m},
+    StatusLineTerm = {fg = c.fg, bg = c.bg_m},
+    StatusLineNC = {fg = c.sky_m, bg = c.bg_p},
+    StatusLineTermNC = {fg = c.sky_m, bg = c.bg_p},
+    TabLine = {fg = c.fg, bg = c.bg_p},
+    TabLineFill = {fg = c.sky_m, bg = c.bg_p},
+    TabLineSel =  {fg = c.bg, bg = c.fg},
     VertSplit = {fg = c.bg3},
     Visual = {bg = c.bg3},
-    VisualNOS = {fg = c.none, bg = c.bg2, fmt = "underline"},
+    VisualNOS = {fg = c.none, bg = c.bg_m, fmt = "underline"},
     QuickFixLine = {fg = c.blue, fmt = "underline"},
     Debug = {fg = c.yellow},
-    debugPC = {fg = c.bg0, bg = c.green},
-    debugBreakpoint = {fg = c.bg0, bg = c.red},
-    ToolbarButton = {fg = c.bg0, bg = c.bg_blue},
-    FloatBorder = {fg = c.grey, bg = c.bg1},
-    NormalFloat = {fg = c.fg, bg = c.bg1},
+    debugPC = {fg = c.bg, bg = c.green},
+    debugBreakpoint = {fg = c.bg, bg = c.red},
+    ToolbarButton = {fg = c.bg, bg = c.blue},
+    FloatBorder = {fg = c.sky_m, bg = c.bg_p},
+    NormalFloat = {fg = c.fg, bg = c.bg_p},
 }
 
 hl.syntax = {
@@ -125,8 +125,8 @@ hl.syntax = {
     Title = colors.Cyan,
     Tag = colors.Green,
     Delimiter = colors.LightGrey,
-    Comment = {fg = c.grey, fmt = cfg.code_style.comments},
-    SpecialComment = {fg = c.grey, fmt = cfg.code_style.comments},
+    Comment = {fg = c.sky_m, fmt = cfg.code_style.comments},
+    SpecialComment = {fg = c.sky_m, fmt = cfg.code_style.comments},
     Todo = {fg = c.red, fmt = cfg.code_style.comments}
 }
 
@@ -135,7 +135,7 @@ hl.treesitter = {
     TSAttribute = colors.Cyan,
     TSBoolean = colors.Orange,
     TSCharacter = colors.Orange,
-    TSComment = {fg = c.grey, fmt = cfg.code_style.comments},
+    TSComment = {fg = c.sky_m, fmt = cfg.code_style.comments},
     TSConditional = {fg = c.purple, fmt = cfg.code_style.keywords},
     TSConstant = colors.Orange,
     TSConstBuiltin = colors.Orange,
@@ -192,10 +192,10 @@ hl.treesitter = {
     TSVariableBuiltin = {fg = c.red, fmt = cfg.code_style.variables},
 }
 
-local diagnostics_error_color = cfg.diagnostics.darker and c.dark_red or c.red
-local diagnostics_hint_color = cfg.diagnostics.darker and c.dark_purple or c.purple
-local diagnostics_warn_color = cfg.diagnostics.darker and c.dark_yellow or c.yellow
-local diagnostics_info_color = cfg.diagnostics.darker and c.dark_cyan or c.cyan
+local diagnostics_error_color = cfg.diagnostics.darker and c.red_c or c.red
+local diagnostics_hint_color = cfg.diagnostics.darker and c.purple_c or c.purple
+local diagnostics_warn_color = cfg.diagnostics.darker and c.yellow_c or c.yellow
+local diagnostics_info_color = cfg.diagnostics.darker and c.cyan_c or c.cyan
 hl.plugins.lsp = {
     LspCxxHlGroupEnumConstant = colors.Orange,
     LspCxxHlGroupMemberVariable = colors.Orange,
@@ -208,13 +208,13 @@ hl.plugins.lsp = {
     DiagnosticInfo = {fg = c.cyan},
     DiagnosticWarn = {fg = c.yellow},
 
-    DiagnosticVirtualTextError = { bg = cfg.diagnostics.background and util.darken(diagnostics_error_color, 0.1, c.bg0) or c.none,
+    DiagnosticVirtualTextError = { bg = cfg.diagnostics.background and util.darken(diagnostics_error_color, 0.1, c.bg) or c.none,
                                    fg = diagnostics_error_color },
-    DiagnosticVirtualTextWarn = { bg = cfg.diagnostics.background and util.darken(diagnostics_warn_color, 0.1, c.bg0) or c.none,
+    DiagnosticVirtualTextWarn = { bg = cfg.diagnostics.background and util.darken(diagnostics_warn_color, 0.1, c.bg) or c.none,
                                   fg = diagnostics_warn_color },
-    DiagnosticVirtualTextInfo = { bg = cfg.diagnostics.background and util.darken(diagnostics_info_color, 0.1, c.bg0) or c.none,
+    DiagnosticVirtualTextInfo = { bg = cfg.diagnostics.background and util.darken(diagnostics_info_color, 0.1, c.bg) or c.none,
                                   fg = diagnostics_info_color },
-    DiagnosticVirtualTextHint = { bg = cfg.diagnostics.background and util.darken(diagnostics_hint_color, 0.1, c.bg0) or c.none,
+    DiagnosticVirtualTextHint = { bg = cfg.diagnostics.background and util.darken(diagnostics_hint_color, 0.1, c.bg) or c.none,
                                   fg = diagnostics_hint_color },
 
     DiagnosticUnderlineError = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.red},
@@ -222,12 +222,12 @@ hl.plugins.lsp = {
     DiagnosticUnderlineInfo = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.blue},
     DiagnosticUnderlineWarn = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.yellow},
 
-    LspReferenceText = { bg = c.bg2 },
-    LspReferenceWrite = { bg = c.bg2 },
-    LspReferenceRead = { bg = c.bg2 },
+    LspReferenceText = { bg = c.bg_m },
+    LspReferenceWrite = { bg = c.bg_m },
+    LspReferenceRead = { bg = c.bg_m },
 
-    LspCodeLens = { fg = c.grey, fmt = cfg.code_style.comments },
-    LspCodeLensSeparator = { fg = c.grey },
+    LspCodeLens = { fg = c.sky_m, fmt = cfg.code_style.comments },
+    LspCodeLensSeparator = { fg = c.sky_m },
 }
 
 hl.plugins.lsp.LspDiagnosticsDefaultError = hl.plugins.lsp.DiagnosticError
@@ -253,17 +253,17 @@ hl.plugins.barbar = {
     BufferCurrent = { fmt = "bold" },
     BufferCurrentMod = { fg = c.orange, fmt = "bold,italic" },
     BufferCurrentSign = { fg = c.purple },
-    BufferInactiveMod = { fg = c.light_grey, bg = c.bg1, fmt = "italic" },
-    BufferVisible = { fg = c.light_grey, bg = c.bg0 },
-    BufferVisibleMod = { fg = c.yellow, bg = c.bg0, fmt = "italic" },
-    BufferVisibleIndex = { fg = c.light_grey, bg = c.bg0 },
-    BufferVisibleSign = { fg = c.light_grey, bg = c.bg0 },
-    BufferVisibleTarget = { fg = c.light_grey, bg = c.bg0 },
+    BufferInactiveMod = { fg = c.sky_p, bg = c.bg_p, fmt = "italic" },
+    BufferVisible = { fg = c.sky_p, bg = c.bg },
+    BufferVisibleMod = { fg = c.yellow, bg = c.bg, fmt = "italic" },
+    BufferVisibleIndex = { fg = c.sky_p, bg = c.bg },
+    BufferVisibleSign = { fg = c.sky_p, bg = c.bg },
+    BufferVisibleTarget = { fg = c.sky_p, bg = c.bg },
 }
 
 hl.plugins.cmp = {
     CmpItemAbbr = colors.Fg,
-    CmpItemAbbrDeprecated = { fg = c.light_grey, fmt = "strikethrough" },
+    CmpItemAbbrDeprecated = { fg = c.sky_p, fmt = "strikethrough" },
     CmpItemAbbrMatch = colors.Cyan,
     CmpItemAbbrMatchFuzzy = { fg = c.cyan, fmt = "underline" },
     CmpItemMenu = colors.LightGrey,
@@ -340,14 +340,14 @@ hl.plugins.gitsigns = {
 hl.plugins.nvim_tree = {
     NvimTreeNormal = { fg = c.fg, bg = cfg.transparent and c.none or c.bg_d },
     NvimTreeVertSplit = { fg = c.bg_d, bg = cfg.transparent and c.none or c.bg_d },
-    NvimTreeEndOfBuffer = { fg = cfg.ending_tildes and c.bg2 or c.bg_d, bg = cfg.transparent and c.none or c.bg_d },
+    NvimTreeEndOfBuffer = { fg = cfg.ending_tildes and c.bg_m or c.bg_d, bg = cfg.transparent and c.none or c.bg_d },
     NvimTreeRootFolder = { fg = c.orange, fmt = "bold" },
     NvimTreeGitDirty = colors.Yellow,
     NvimTreeGitNew = colors.Green,
     NvimTreeGitDeleted = colors.Red,
     NvimTreeSpecialFile = { fg = c.yellow, fmt = "underline" },
     NvimTreeIndentMarker = colors.Fg,
-    NvimTreeImageFile = { fg = c.dark_purple },
+    NvimTreeImageFile = { fg = c.purple_c },
     NvimTreeSymlink = colors.Purple,
     NvimTreeFolderName = colors.Blue,
 }
@@ -358,7 +358,7 @@ hl.plugins.telescope = {
     TelescopePreviewBorder = colors.Cyan,
     TelescopeMatching = { fg = c.orange, fmt = "bold" },
     TelescopePromptPrefix = colors.Green,
-    TelescopeSelection =  { bg =c.bg2 },
+    TelescopeSelection =  { bg =c.bg_m },
     TelescopeSelectionCaret = colors.Yellow
 }
 
@@ -366,12 +366,12 @@ hl.plugins.dashboard = {
     DashboardShortCut = colors.Blue,
     DashboardHeader = colors.Yellow,
     DashboardCenter = colors.Cyan,
-    DashboardFooter = { fg = c.dark_red, fmt = "italic"}
+    DashboardFooter = { fg = c.red_c, fmt = "italic"}
 }
 
 hl.plugins.outline = {
-    FocusedSymbol = { fg = c.purple, bg = c.bg2, fmt = "bold" },
-    AerialLine = { fg = c.purple, bg = c.bg2, fmt = "bold" },
+    FocusedSymbol = { fg = c.purple, bg = c.bg_m, fmt = "bold" },
+    AerialLine = { fg = c.purple, bg = c.bg_m, fmt = "bold" },
 }
 
 hl.plugins.ts_rainbow = {
@@ -390,7 +390,7 @@ hl.plugins.mini = {
     MiniCursorword = { fmt = "underline" },
     MiniCursorwordCurrent = { fmt = "underline" },
 
-    MiniIndentscopeSymbol = { fg = c.light_grey },
+    MiniIndentscopeSymbol = { fg = c.sky_p },
     MiniIndentscopePrefix = { fmt = "nocombine" }, -- Make it invisible
 
     MiniJump = { fg = c.purple, fmt = "underline", sp = c.purple },
@@ -398,36 +398,36 @@ hl.plugins.mini = {
     MiniJump2dSpot = { fg = c.red, fmt = "bold,nocombine" },
 
     MiniStarterCurrent = { fmt = "nocombine" },
-    MiniStarterFooter = { fg = c.dark_red, fmt = "italic" },
+    MiniStarterFooter = { fg = c.red_c, fmt = "italic" },
     MiniStarterHeader = colors.Yellow,
-    MiniStarterInactive = { fg = c.grey, fmt = cfg.code_style.comments },
-    MiniStarterItem = { fg = c.fg, bg = cfg.transparent and c.none or c.bg0 },
-    MiniStarterItemBullet = { fg = c.grey },
+    MiniStarterInactive = { fg = c.sky_m, fmt = cfg.code_style.comments },
+    MiniStarterItem = { fg = c.fg, bg = cfg.transparent and c.none or c.bg },
+    MiniStarterItemBullet = { fg = c.sky_m },
     MiniStarterItemPrefix = { fg = c.yellow },
     MiniStarterSection = colors.LightGrey,
     MiniStarterQuery = { fg = c.cyan },
 
-    MiniStatuslineDevinfo = { fg = c.fg, bg = c.bg2 },
-    MiniStatuslineFileinfo = { fg = c.fg, bg = c.bg2 },
-    MiniStatuslineFilename = { fg = c.grey, bg = c.bg1 },
-    MiniStatuslineInactive = { fg = c.grey, bg = c.bg0 },
-    MiniStatuslineModeCommand = { fg = c.bg0, bg = c.yellow, fmt = "bold" },
-    MiniStatuslineModeInsert = { fg = c.bg0, bg = c.blue, fmt = "bold" },
-    MiniStatuslineModeNormal = { fg = c.bg0, bg = c.green, fmt = "bold" },
-    MiniStatuslineModeOther = { fg = c.bg0, bg = c.cyen, fmt = "bold" },
-    MiniStatuslineModeReplace = { fg = c.bg0, bg = c.red, fmt = "bold" },
-    MiniStatuslineModeVisual = { fg = c.bg0, bg = c.purple, fmt = "bold" },
+    MiniStatuslineDevinfo = { fg = c.fg, bg = c.bg_m },
+    MiniStatuslineFileinfo = { fg = c.fg, bg = c.bg_m },
+    MiniStatuslineFilename = { fg = c.sky_m, bg = c.bg_p },
+    MiniStatuslineInactive = { fg = c.sky_m, bg = c.bg },
+    MiniStatuslineModeCommand = { fg = c.bg, bg = c.yellow, fmt = "bold" },
+    MiniStatuslineModeInsert = { fg = c.bg, bg = c.blue, fmt = "bold" },
+    MiniStatuslineModeNormal = { fg = c.bg, bg = c.green, fmt = "bold" },
+    MiniStatuslineModeOther = { fg = c.bg, bg = c.cyen, fmt = "bold" },
+    MiniStatuslineModeReplace = { fg = c.bg, bg = c.red, fmt = "bold" },
+    MiniStatuslineModeVisual = { fg = c.bg, bg = c.purple, fmt = "bold" },
 
-    MiniSurround = { fg = c.bg0, bg = c.orange },
+    MiniSurround = { fg = c.bg, bg = c.orange },
 
     MiniTablineCurrent = { fmt = "bold" },
-    MiniTablineFill = { fg = c.grey, bg = c.bg1 },
-    MiniTablineHidden = { fg = c.fg, bg = c.bg1 },
+    MiniTablineFill = { fg = c.sky_m, bg = c.bg_p },
+    MiniTablineHidden = { fg = c.fg, bg = c.bg_p },
     MiniTablineModifiedCurrent = { fg = c.orange, fmt = "bold,italic" },
-    MiniTablineModifiedHidden = { fg = c.light_grey, bg = c.bg1, fmt = "italic" },
-    MiniTablineModifiedVisible = { fg = c.yellow, bg = c.bg0, fmt = "italic" },
-    MiniTablineTabpagesection = { fg = c.bg0, bg = c.bg_yellow },
-    MiniTablineVisible = { fg = c.light_grey, bg = c.bg0 },
+    MiniTablineModifiedHidden = { fg = c.sky_p, bg = c.bg_p, fmt = "italic" },
+    MiniTablineModifiedVisible = { fg = c.yellow, bg = c.bg, fmt = "italic" },
+    MiniTablineTabpagesection = { fg = c.bg, bg = c.yellow },
+    MiniTablineVisible = { fg = c.sky_p, bg = c.bg },
 
     MiniTestEmphasis = { fmt = "bold" },
     MiniTestFail = { fg = c.red, fmt = "bold" },
@@ -473,7 +473,7 @@ hl.langs.markdown = {
     markdownId = colors.Yellow,
     markdownIdDeclaration = colors.Red,
     markdownItalic = {fg = c.none, fmt = "italic"},
-    markdownItalicDelimiter = {fg = c.grey, fmt = "italic"},
+    markdownItalicDelimiter = {fg = c.sky_m, fmt = "italic"},
     markdownLinkDelimiter = colors.Grey,
     markdownLinkText = colors.Red,
     markdownLinkTextDelimiter = colors.Grey,
@@ -541,7 +541,7 @@ hl.langs.vim = {
     vimMapLhs = colors.Fg,
     vimMapRhs = colors.Blue,
     vimVar = {fg = c.fg, fmt = cfg.code_style.variables},
-    vimCommentTitle = {fg = c.light_grey, fmt = cfg.code_style.comments},
+    vimCommentTitle = {fg = c.sky_p, fmt = cfg.code_style.comments},
 }
 
 local lsp_kind_icons_color = {
@@ -566,7 +566,7 @@ local lsp_kind_icons_color = {
     Reference = c.orange,
     Snippet = c.red,
     Struct = c.purple,
-    Text = c.light_grey,
+    Text = c.sky_p,
     TypeParameter = c.red,
     Unit = c.green,
     Value = c.orange,
@@ -594,7 +594,7 @@ function M.setup()
             color_name = c[name]
             if not color_name then
                 vim.schedule(function()
-                    vim.notify('onedark.nvim: unknown color "' .. name .. '"', vim.log.levels.ERROR, { title = "onedark.nvim" })
+                    vim.notify('penumbra.nvim: unknown color "' .. name .. '"', vim.log.levels.ERROR, { title = "penumbra.nvim" })
                 end)
                 return ""
             end
@@ -602,7 +602,7 @@ function M.setup()
         return prefix .. "=" .. color_name
     end
 
-    for group_name, group_settings in pairs(vim.g.onedark_config.highlights) do
+    for group_name, group_settings in pairs(vim.g.penumbra_config.highlights) do
         vim.api.nvim_command(string.format("highlight %s %s %s %s %s", group_name,
             replace_color("guifg", group_settings.fg),
             replace_color("guibg", group_settings.bg),

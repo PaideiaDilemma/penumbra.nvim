@@ -5,16 +5,16 @@ local function load_old_config()
     local using_old_config = false
     local messages = ""
     for _, opt in ipairs(opts) do
-        local value = vim.g["onedark_" .. opt]
+        local value = vim.g["penumbra_" .. opt]
         if value ~= nil then
             cfg[opt] = value
             using_old_config = true
-            messages = messages .. "onedark.nvim: option 'onedark_" .. opt .. "' has been deprecated. See how to use the new configuration in README.md\n"
+            messages = messages .. "penumbra.nvim: option 'penumbra_" .. opt .. "' has been deprecated. See how to use the new configuration in README.md\n"
         end
     end
 
     if using_old_config then
-        vim.schedule(function() vim.notify(messages, vim.log.levels.WARN, { title = "onedark.nvim" }) end)
+        vim.schedule(function() vim.notify(messages, vim.log.levels.WARN, { title = "penumbra.nvim" }) end)
         -- some values need to be inverted before applying them to new config
         if cfg.disable_terminal_colors ~= nil then cfg.disable_terminal_colors = not cfg.disable_terminal_colors end
         if cfg.hide_ending_tildes ~= nil then cfg.hide_ending_tildes = not cfg.hide_ending_tildes end
