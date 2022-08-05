@@ -19,7 +19,7 @@ return {
     cyan = "#00A0BA",
     cyan_c = "#00B3C2",-- contrast 8 cyan
     blue = "#6E8DD5",
-    purple = "#AC78BD"
+    purple = "#AC78BD",
     purple_c = "#A48FE1",-- contrast 8 purple
   },
   contrast_dark = {
@@ -41,7 +41,7 @@ return {
     cyan = "#00B1CE",
     cyan_c = "#00C4D7",-- more_contrast cyan
     blue = "#7A9BEC",
-    purple = "#BE85D1"
+    purple = "#BE85D1",
     purple_c = "#B69CF6",-- more_contrast purple
   },
   more_contrast_dark = {
@@ -63,7 +63,7 @@ return {
     cyan = "#16C3DD",
     cyan_c = "#00A2AF",-- balanced 8 cyan
     blue = "#83ADFF",
-    purple = "#CC94E6"
+    purple = "#CC94E6",
     purple_c = "#9481CC",-- balanced 8 purple
   },
   balanced_light = {
@@ -85,7 +85,7 @@ return {
     cyan = "#00A0BA",
     cyan_c = "#00B3C2",-- contrast 8 cyan
     blue = "#6E8DD5",
-    purple = "#AC78BD"
+    purple = "#AC78BD",
     purple_c = "#A48FE1",-- contrast 8 purple
   },
   contrast_light = {
@@ -107,7 +107,7 @@ return {
     cyan = "#00B1CE",
     cyan_c = "#00C4D7",-- more_contrast cyan
     blue = "#7A9BEC",
-    purple = "#BE85D1"
+    purple = "#BE85D1",
     purple_c = "#B69CF6",-- more_contrast purple
   },
   more_contrast_light = {
@@ -129,7 +129,7 @@ return {
     cyan = "#16C3DD",
     cyan_c = "#00A2AF",-- balanced 8 cyan
     blue = "#83ADFF",
-    purple = "#CC94E6"
+    purple = "#CC94E6",
     purple_c = "#9481CC",-- balanced 8 purple
   }
 }
