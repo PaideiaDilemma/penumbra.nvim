@@ -39,8 +39,8 @@ function M.toggle()
     else
         vim.o.background = 'dark'
     end
-    --vim.api.nvim_command('colorscheme penumbra')
-    M.colorscheme()
+    vim.api.nvim_command('colorscheme penumbra')
+    --M.colorscheme()
 end
 
 local default_config = {
@@ -94,8 +94,8 @@ function M.setup(opts)
 end
 
 function M.load()
-  --vim.api.nvim_command('colorscheme penumbra')
-  M.colorscheme()
+  vim.api.nvim_command('colorscheme penumbra')
+  --M.colorscheme()
 end
 
 return M
