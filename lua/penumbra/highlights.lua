@@ -102,7 +102,7 @@ hl.syntax = {
     Boolean = colors.Orange,
     Type = colors.Yellow,
     Structure = colors.Yellow,
-    StorageClass = colors.Yellow,
+    StorageClass = colors.Purple,
     Identifier = {fg = c.red, fmt = cfg.code_style.variables},
     Constant = colors.Cyan,
     PreProc = colors.Purple,
@@ -189,6 +189,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@danger"] = colors.Fg,
         ["@type"] = colors.Yellow,
         ["@type.builtin"] = colors.Orange,
+        ["@storageclass"] = colors.Purple,
         ["@variable"] = {fg = c.fg, fmt = cfg.code_style.variables},
         ["@variable.builtin"] = {fg = c.red, fmt = cfg.code_style.variables},
     }
