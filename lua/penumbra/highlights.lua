@@ -59,7 +59,7 @@ hl.common = {
     WarningMsg = {fg = c.yellow, fmt = "bold"},
     MoreMsg = {fg = c.blue, fmt = "bold"},
     IncSearch = {fg = c.bg, bg = c.orange},
-    Search = {fg = c.bg, bg = c.yellow},
+    Search = {fg = c.bg, bg = c.green},
     Substitute = {fg = c.bg, bg = c.green},
     MatchParen = {fg = c.none, bg = c.sky_m},
     NonText = {fg = c.sky_m},
