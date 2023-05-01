@@ -491,6 +491,11 @@ hl.plugins.outline = {
 	AerialLine = { fg = c.purple, bg = c.bg_m, fmt = "bold" },
 }
 
+hl.plugins.navic = {
+	NavicText = { fg = c.fg },
+	NavicSeparator = { fg = c.light_grey },
+}
+
 hl.plugins.ts_rainbow = {
 	rainbowcol1 = colors.Grey,
 	rainbowcol2 = colors.Yellow,
