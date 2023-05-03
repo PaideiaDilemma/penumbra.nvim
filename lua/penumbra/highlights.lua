@@ -571,6 +571,14 @@ hl.plugins.mini = {
 	MiniTrailspace = { bg = c.red },
 }
 
+hl.plugins.noice = {
+	NoiceCmdlinePopupBorder = { bg = c.none, fg = c.cyan },
+	NoiceCmdlinePopupBorderSearch = { bg = c.none, fg = c.cyan },
+	NoiceCmdlineIcon = { bg = c.bg, fg = c.yellow },
+	NoiceCmdlinePopup = { bg = c.bg, fg = c.fg, bold = true },
+	NoiceCmdline = { bg = c.bg, fg = c.cyan },
+}
+
 hl.langs.c = {
 	cInclude = colors.Blue,
 	cStorageClass = colors.Purple,
@@ -771,6 +779,11 @@ function M.setup()
 				replace_color("gui", group_settings.fmt)
 			)
 		)
+	end
+
+	-- globally disable semanticTokens set by the language server
+	for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
+		vim.api.nvim_set_hl(0, group, {})
 	end
 end
 
