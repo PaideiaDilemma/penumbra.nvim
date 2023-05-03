@@ -579,6 +579,24 @@ hl.plugins.noice = {
 	NoiceCmdline = { bg = c.bg, fg = c.cyan },
 }
 
+hl.plugins.notify = {
+	NotifyERRORBorder = { bg = c.none, fg = c.red },
+	NotifyWARNBorder = { bg = c.none, fg = c.yellow },
+	NotifyINFOBorder = { bg = c.none, fg = c.green },
+	NotifyDEBUGBorder = { bg = c.none, fg = c.purple },
+	NotifyTRACEBorder = { bg = c.none, fg = c.purple },
+	NotifyERRORIcon = { bg = c.none, fg = c.red },
+	NotifyWARNIcon = { bg = c.none, fg = c.yellow },
+	NotifyINFOIcon = { bg = c.none, fg = c.green },
+	NotifyDEBUGIcon = { bg = c.none, fg = c.purple },
+	NotifyTRACEIcon = { bg = c.none, fg = c.purple },
+	NotifyERRORTitle = { bg = c.none, fg = c.sky_p },
+	NotifyWARNTitle = { bg = c.none, fg = c.sky_p },
+	NotifyINFOTitle = { bg = c.none, fg = c.sky_p },
+	NotifyDEBUGTitle = { bg = c.none, fg = c.sky_p },
+	NotifyTRACETitle = { bg = c.none, fg = c.sky_p },
+}
+
 hl.langs.c = {
 	cInclude = colors.Blue,
 	cStorageClass = colors.Purple,
