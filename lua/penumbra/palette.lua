@@ -21,6 +21,11 @@ return {
 		blue = "#6E8DD5",
 		purple = "#AC78BD",
 		purple_c = "#A48FE1", -- contrast 8 purple
+		-- tinted bg colors - mainly for diff highlighting
+		bg_red = "#2b1015",
+		bg_green = "#183628",
+		bg_cyan = "#003b44",
+		bg_blue = "#0f1b35",
 	},
 	contrast_dark = {
 		fg_p = "#FFFDFB", -- sun+
@@ -43,6 +48,11 @@ return {
 		blue = "#7A9BEC",
 		purple = "#BE85D1",
 		purple_c = "#B69CF6", -- more_contrast purple
+		-- tinted bg colors - mainly for diff highlighting
+		bg_red = "#3a0e16",
+		bg_green = "#143528",
+		bg_cyan = "#003b45",
+		bg_blue = "#081638",
 	},
 	more_contrast_dark = {
 		fg_p = "#FFFDFB", -- sun+
@@ -65,6 +75,11 @@ return {
 		blue = "#83ADFF",
 		purple = "#CC94E6",
 		purple_c = "#9481CC", -- balanced 8 purple
+		-- tinted bg colors - mainly for diff highlighting
+		bg_red = "#3a0712",
+		bg_green = "#123524",
+		bg_cyan = "#06353c",
+		bg_blue = "#001848",
 	},
 	balanced_light = {
 		bg_p = "#FFFDFB", -- sun+
@@ -87,6 +102,11 @@ return {
 		blue = "#6E8DD5",
 		purple = "#AC78BD",
 		purple_c = "#A48FE1", -- contrast 8 purple
+		-- tinted bg colors - mainly for diff highlighting
+		bg_red = "#e5b8c0",
+		bg_green = "#c8e7d8",
+		bg_cyan = "#a6f3ff",
+		bg_blue = "#bac9eb",
 	},
 	contrast_light = {
 		bg_p = "#FFFDFB", -- sun+
@@ -109,6 +129,11 @@ return {
 		blue = "#7A9BEC",
 		purple = "#BE85D1",
 		purple_c = "#B69CF6", -- more_contrast purple
+		-- tinted bg colors - mainly for diff highlighting
+		bg_red = "#eebbc4",
+		bg_green = "#c2e8d9",
+		bg_cyan = "#a7f3ff",
+		bg_blue = "#adc2f3",
 	},
 	more_contrast_light = {
 		bg_p = "#FFFDFB", -- sun+
@@ -131,5 +156,10 @@ return {
 		blue = "#83ADFF",
 		purple = "#CC94E6",
 		purple_c = "#9481CC", -- balanced 8 purple
+		-- tinted bg colors - mainly for diff highlighting
+		bg_red = "#f5adbd",
+		bg_green = "#bfe9d5",
+		bg_cyan = "#adedf7",
+		bg_blue = "#aac7ff",
 	},
 }
