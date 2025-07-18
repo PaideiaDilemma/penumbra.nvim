@@ -82,9 +82,9 @@ return {
 		bg_blue = "#001848",
 	},
 	balanced_light = {
-		bg_p = "#FFFDFB", -- sun+
-		bg = "#FFF7ED", -- sun
-		bg_m = "#F2E6D4", -- sun-
+		bg_p = "#FFF7ED", -- sun
+		bg = "#F2E6D4", -- sun-
+		bg_m = "#BEBEBE", -- sky+
 		sky_p = "#BEBEBE", -- sky+
 		sky = "#8F8F8F", -- sky
 		sky_m = "#636363", -- sky-
@@ -116,8 +116,8 @@ return {
 		sky = "#9E9E9E", -- sky
 		sky_m = "#636363", -- sky-
 		fg_p = "#3E4044", -- shade+
-		fg = "#24272B", -- shade
-		fg_m = "#181B1F", -- shade-
+		fg = "#303338", -- shade
+		fg_m = "#24272B", -- shade-
 		red = "#DF7C8E",
 		red_c = "#F58C81", -- more_contrast red
 		orange = "#D68B47",
@@ -136,15 +136,15 @@ return {
 		bg_blue = "#adc2f3",
 	},
 	more_contrast_light = {
-		bg_p = "#FFFDFB", -- sun+
-		bg = "#FFF7ED", -- sun
-		bg_m = "#F2E6D4", -- sun-
+		bg_p = "#FFFFFF", -- full white
+		bg = "#FFFDFB", -- sun+
+		bg_m = "#FFF7ED", -- sun
 		sky_p = "#DEDEDE", -- sky+
 		sky = "#AEAEAE", -- sky
 		sky_m = "#636363", -- sky-
 		fg_p = "#3E4044", -- shade+
-		fg = "#181B1F", -- shade
-		fg_m = "#0D0F13", -- shade-
+		fg = "#303338", -- shade
+		fg_m = "#24272B", -- shade-
 		red = "#F18AA1",
 		red_c = "#CA736C", -- balanced 8 red
 		orange = "#EA9856",
