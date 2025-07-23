@@ -89,8 +89,8 @@ return {
 		sky = "#8F8F8F", -- sky
 		sky_m = "#636363", -- sky-
 		fg_p = "#3E4044", -- shade+
-		fg = "#303338", -- shade
-		fg_m = "#24272B", -- shade-
+		fg = "#636363", -- sky-
+		fg_m = "#8F8F8F", -- sky
 		red = "#CA7081",
 		red_c = "#DF7F78", -- contrast red
 		orange = "#C27D40",
