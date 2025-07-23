@@ -82,15 +82,15 @@ return {
 		bg_blue = "#001848",
 	},
 	balanced_light = {
-		bg_p = "#FFFFFF", --white
-		bg = "#FFFDFB", -- sun+
-		bg_m = "#FFF7ED", -- sun
+		bg_p = "#FFFDFB", -- sun+
+		bg = "#FFF7ED", -- sun
+		bg_m = "#F2E6D4", -- sun-
 		sky_p = "#BEBEBE", -- sky+
 		sky = "#8F8F8F", -- sky
 		sky_m = "#636363", -- sky-
-		fg_p = "#3E4044", -- shade-
-		fg = "#303338", -- sky+
-		fg_m = "#24272B", -- sky
+		fg_p = "#3E4044", -- shade+
+		fg = "#303338", -- shade
+		fg_m = "#24272B", -- shade-
 		red = "#CA7081",
 		red_c = "#DF7F78", -- contrast red
 		orange = "#C27D40",
