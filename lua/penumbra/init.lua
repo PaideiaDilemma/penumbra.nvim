@@ -27,11 +27,6 @@ function M.colorscheme()
 	end
 	vim.o.termguicolors = true
 	vim.g.colors_name = "penumbra"
-	if vim.o.background == "light" then
-		M.set_options("style", "balanced_light")
-	elseif vim.g.penumbra_config.style == "light" then
-		M.set_options("style", "balanced_dark")
-	end
 	require("penumbra.highlights").setup()
 	require("penumbra.terminal").setup()
 end
@@ -55,7 +50,8 @@ end
 
 local default_config = {
 	-- Main options --
-	style = "balanced_dark",
+	style = nil,
+	flavor = "balanced",
 	toggle_style_key = nil,
 	toggle_style_list = M.styles_list,
 	transparent = false, -- don't set background
