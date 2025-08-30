@@ -39,11 +39,6 @@ function M.toggle()
 	end
 	M.set_options("style", vim.g.penumbra_config.toggle_style_list[index])
 	M.set_options("toggle_style_index", index)
-	if vim.g.penumbra_config.style == "light" then
-		vim.o.background = "light"
-	else
-		vim.o.background = "dark"
-	end
 	vim.api.nvim_command("colorscheme penumbra")
 	--M.colorscheme()
 end
@@ -92,6 +87,19 @@ function M.setup(opts)
 		vim.g.penumbra_config = vim.tbl_deep_extend("keep", vim.g.penumbra_config or {}, default_config)
 		M.set_options("loaded", true)
 		M.set_options("toggle_style_index", 0)
+
+		-- Override vim.o.background if style is set
+		-- Otherwise style will be inferred via penumbra_config.flavor from vim.o.background
+		if vim.g.penumbra_config.style then
+			if vim.g.penumbra_config.style == "light" then
+				vim.o.background = "light"
+			else
+				vim.o.background = "dark"
+			end
+		end
+
+		-- Without this MatchParen will be inverted twice causing it to be broken
+		vim.g.matchparen_disable_cursor_hl = true
 	end
 	if opts then
 		vim.g.penumbra_config = vim.tbl_deep_extend("force", vim.g.penumbra_config, opts)
