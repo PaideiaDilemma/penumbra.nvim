@@ -68,7 +68,7 @@ hl.common = {
 	IncSearch = { fg = c.bg, bg = c.orange },
 	Search = { fg = c.bg, bg = c.green },
 	Substitute = { fg = c.bg, bg = c.green },
-	MatchParen = { fmt = "reverse" },
+	MatchParen = { fmt = "reverse,nocombine,italic" },
 	NonText = { fg = c.sky_m },
 	Whitespace = { fg = c.sky_m },
 	SpecialKey = { fg = c.sky_m },
